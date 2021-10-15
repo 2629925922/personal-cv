@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.bundle.min.js"></script>
+    <title>个人简历</title>
+    <style type="text/css">
+        *{
+            padding: 0;
+        }
+        a{
+            text-decoration: none;
+        }
+        #img1
+        {
+            background-image: url("./images/1.jpg");
+            background-attachment: fixed;
+            background-size: cover;
+            height: 800px;
+        }
+        #img2
+        {
+            background-image: url("./images/2.png");
+            background-attachment: fixed;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 800px;
+            padding-top: 7%;
+        }
+        #img3{
+            background-image: url("./images/3.jpg");
+            background-attachment: fixed;
+            background-size: cover;
+            width: 100%;
+            height: 800px;
+            padding-top: 70px;
+        }
+        #img4
+        {
+            background-image: url("./images/4.jpg");
+            background-attachment: fixed;
+            background-size: cover;
+            width: 100%;
+            height: 800px;
+            padding-top: 70px;
+        }
+        #d1{
+            margin-left: 14%;
+            padding-top: 8%;
+        }
+        #d1 h1 a {
+            color: #fff;
+            transition-property: color;
+            transition-duration: 1s;
+        }
+        #d1 h1 a:hover
+        {
+            background-image: linear-gradient(45deg,lightskyblue,palegreen,cyan);
+            background-clip: content-box;
+            color: transparent;
+            -webkit-background-clip:text;
+        }
+
+        .rate
+        {
+            width: 100%;overflow: hidden;padding-left: 19%
+        }
+
+        .d2{
+            background-color: #23D6E7;
+            height: 60%;
+            width: 40%;
+            margin-top: 20px;
+            border-radius: 3%;
+            padding: 2% 2%;
+        }
+        .d2 div:nth-child(1)
+        {
+            background-color: #23D6E7;
+            width: 80%;
+            height: 87%;
+            border: 4px double #fff;
+            margin-left: 5%;
+            padding-top: 5%;
+            padding-left: 8%;
+        }
+        .d2 div:nth-child(1) h2
+        {
+            background-color: yellow;
+            padding: 10%;
+            font-size: 1.1em;
+            padding-left: 3%;
+            width: 40%;
+        }
+        .d2 div:nth-child(1) h3
+        {
+            font-size: 2em;
+            color: #212121;
+            letter-spacing: 5px;
+            font-weight: bold;
+        }
+        .d2 div:nth-child(1) h4
+        {
+            color: #424242;
+            font-size: 1em;
+            letter-spacing:5px;
+        }
+        .d2 div:nth-child(1) ul
+        {
+            border-top: 1px solid #424242;
+            list-style: none;
+            width: 90%;
+            padding-left: -0%;
+        }
+        .d2 div:nth-child(1) ul li ul
+        {
+            border: none;
+        }
+        .d2 div:nth-child(1) ul li ul li
+        {
+            display: inline-block;
+            padding-top: 30px;
+        }
+        .d2 div:nth-child(1) ul li ul li:nth-child(1)
+        {
+            width: 38%;
+        }
+        .d2 div:nth-child(1) ul li ul span,b
+        {
+            color: #fff;
+        }
+        .d2 div:nth-child(1) ul li ul span
+        {
+            font-size: 14px;
+        }
+        .d3
+        {
+            width: 100%;
+            height: 70%;
+            border-radius: 2%;
+            margin-left: 3%;
+        }
+        .d4
+        {
+            background-color: #fff;
+            width: 70%;
+            height: 90%;
+            margin-left: 15%;
+            padding-top: 2%;
+            border-radius: 2%;
+        }
+        .d4 div:nth-child(1) div:nth-child(1) h1
+        {
+            font-size: 2.6em;
+            font-weight: bold;
+            letter-spacing: 40px;
+            color: #424242;
+            text-shadow: 7px 5px 5px gray
+        }
+        .d4 div:nth-child(1) div:nth-child(1) h1:after
+        {
+            content: '';
+            position: absolute;
+            border-bottom: 4px double #23D6E7;
+            width: 16%;
+            left: 41%;
+            bottom: -40%;
+        }
+        .d5{padding-left: 43%}
+        .d6{padding-top:5%;padding-left: 8%}
+        .d7
+        {
+            background-color: #EBEBEB;
+            margin-left: 5%;
+            padding-left: 0;
+            height: 30px;
+        }
+        .d7 div
+        {
+            width: 80%;
+            background-color: yellow;
+            height: 100%;
+            padding-left: 10%;
+        }
+
+        @media (min-width: 1000px)
+        {
+            #d1 h1 a {font-size: 2em;}
+            .rate div:nth-child(1) {position: absolute}
+            .d3 {width: 210%;height: 64%;border-radius: 2%;margin-left: 170%;}
+        }
+        @media (max-width: 892px)
+        {
+            #d1 h1 a {font-size: 0.8em}
+            .d2 {width: 100%;height: 47%}
+            .d2 div:nth-child(1) {width: 95%;padding-top: 2%}
+            .rate {padding-left: 0}
+            #d1 h1 a{font-size: 1.5em}
+            .d4 {height: 96%}
+            .d4 div:nth-child(1) div:nth-child(1) h1{font-size: 1.5em}
+            .d5{padding-left: 35%}
+            .d4 div:nth-child(1) div:nth-child(1) h1:after {bottom: -9%;width: 20%}
+            .d6{padding-left: 3%}
+            .d7 {height: 25px;margin-top: 8%}
+            .d7 div p{font-size: small}
+        }
+    </style>
+</head>
+<body>
+    <div class=".container-fluid">
+        <div id="img1">
+            <div class="row" style="width: 100%;overflow: hidden">
+                <div id="d1" class="col">
+                    <h1><a href="#">Personal CV</a></h1>
+                </div>
+            </div>
+            <div class="row rate">
+                <div class="col-sm-5 col-12 d2">
+                    <div>
+                        <h3>我叫xxx</h3>
+                        <h4>21岁&nbsp;/&nbsp;男&nbsp;/&nbsp;汉&nbsp;/&nbsp;专科</h4>
+                        <ul>
+                            <li>
+                                <ul>
+                                    <li><b>手机号</b></li>
+                                    <li><span>18535011492</span></li>
+                                </ul>
+                            </li>
+                            <li>
+                            <ul>
+                                <li><b>地址</b></li>
+                                <li><span>山西忻州繁峙县</span></li>
+                            </ul>
+                            </li>
+                            <li>
+                                <ul>
+                                    <li><b>邮箱</b></li>
+                                    <li><span>2629925922@qq.com</span></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul>
+                                    <li><b>求职意向</b></li>
+                                        <li><span>web开发</span></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-12" >
+                    <img class="d3" src="./images/gr.jpeg">
+                </div>
+            </div>
+        </div>
+        <div id="img2">
+            <div class="d4">
+                <div class="row">
+                    <div class="col-sm-12 col-12 d5">
+                        <h1>技能</h1>
+                    </div>
+                </div>
+                <div class="row d6">
+                    <div class="col-sm-4 col-4">熟悉office软件</div>
+                    <div class="col-sm-4 col-4">熟练使用python</div>
+                    <div class="col-sm-4 col-4">熟练使用scrapy爬虫框架</div>
+                </div>
+                <div class="row d6">
+                    <div class="col-sm-4 col-4">熟练使用django框架跟flask框架</div>
+                    <div class="col-sm-4 col-4">熟悉office软件</div>
+                    <div class="col-sm-4 col-4">熟悉office软件</div>
+                </div>
+                <div class="row d6">
+                    <div class="col-sm-4 col-4">熟悉office软件</div>
+                    <div class="col-sm-4 col-4">熟悉office软件</div>
+                    <div class="col-sm-4 col-4">熟悉office软件</div>
+                </div>
+                <div class="row d6">
+                    <div class="col-sm-4 col-4">熟悉office软件</div>
+                    <div class="col-sm-4 col-4">熟悉office软件</div>
+                    <div class="col-sm-4 col-4">熟悉office软件</div>
+                </div>
+                <div class="row d6">
+                    <div class="col-sm-4 col-4">熟悉office软件</div>
+                    <div class="col-sm-4 col-4">熟悉office软件</div>
+                    <div class="col-sm-4 col-4">熟悉office软件</div>
+                </div>
+                <div class="row" style="padding-top: 3%">
+                    <div class="col-sm-5 col-10 d7">
+                        <div>
+                            <p>HTML&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;CSS&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;JAVASCRIPT&nbsp;&nbsp;</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-5 col-10 d7"><div><p>DATABASE</p></div></div>
+                </div>
+                <div class="row" style="padding-top: 3%">
+                    <div class="col-sm-5 col-10 d7">
+                        <div>
+                            <p>HTML&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;CSS&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;JAVASCRIPT&nbsp;&nbsp;</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-5 col-10 d7"><div><p>DATABASE</p></div></div>
+                </div>
+            </div>
+        </div>
+        <div id="img3"></div>
+        <div id="img4"></div>
+    </div>
+</body>
+</html>
